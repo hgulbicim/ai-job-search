@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Hüseyin Gülbiçim
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Hüseyin Gülbiçim, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,85 +10,122 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
+<!-- Populated 2026-09-13 from documents/cv/CV_Hüseyin_Gülbiçim_20260812.pdf plus an intake
+     conversation. The authoritative long-form version is
+     .claude/skills/job-application-assistant/01-candidate-profile.md - this is the summary. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Hüseyin Gülbiçim
+- **Location:** Salzburg, Austria (5020). No relocation. ~45 min commute radius; Austria-wide only at 80-100% remote; Upper Austria (Wels/Linz) only with strong remote; Germany/Bavaria out of scope.
+- **Contact:** hsynglbcm@gmail.com | +43 664 384 68 55 | [LinkedIn](https://www.linkedin.com/in/huseyin-gulbicim) | [GitHub](https://github.com/hgulbicim)
+- **Work eligibility:** Turkish national, resident in Austria with a **valid Austrian work permit**. No sponsorship needed. Postings requiring EU/Austrian citizenship or a security clearance fail the Eligibility Gate.
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Turkish | Native |
+  | English | B2 (professional working language, 4+ years remote/international) |
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+  **German is deliberately absent: he does not speak it.** Any posting requiring German as a job
+  condition is a **hard FAIL** under the Language Gate. A posting merely *written* in German for a
+  role whose working language is English is **not** a fail - this distinction is critical in the
+  Austrian market. See `04-job-evaluation.md`, "Austrian Market Notes".
+- **CV language:** English
+- **Status:** Employed. Senior Software Developer at **Axess AG** (Anif, Salzburg), hybrid, since 09.2025. Not under time pressure; moving only for a materially better package.
+- **LinkedIn headline:** "Senior Software Developer | .NET & Microservices | Salzburg"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **MBA** (2018-2020) - İstanbul Bilgi Üniversitesi
+- **BSc Economics**, Faculty of Economics and Administrative Sciences (2010-2018) - Anadolu Üniversitesi
+- **Web Design and Coding**, associate programme (2020-2023) - Anadolu Üniversitesi
+- **Real Estate and Property Management**, associate (2008-2010) - Kocaeli Üniversitesi
+
+**Never imply a CS degree.** 13+ years of production engineering is the credential; the MBA is a real differentiator for architect and lead roles.
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Senior Software Developer** (09.2025 - present) - **Axess AG** (Anif, Salzburg, Austria), hybrid
+  - Backend development in the .NET ecosystem for access-control and ticketing systems
+  - **Competitor flag:** Axess AG competes directly with SKIDATA. Warn about non-compete clauses before any SKIDATA application.
+- **Principal Software Developer** (10.2023 - 07.2025) - **Hepsiburada** (remote from Salzburg)
+  - Owned architecture and technical direction for the Customer Services platform
+  - Services sustained **250M+ requests/day** with real-time processing and high availability
+- **Software Development Team Lead** (07.2022 - 10.2023) - **Hepsiburada** (remote, İstanbul)
+  - Led **11 people** across 4 disciplines: 3 backend, 3 frontend, 2 QA, 3 product
+- **Senior Software Developer** (05.2021 - 07.2022) - **Hepsiburada** (remote, İstanbul)
+  - IVR/IVN, WhatsApp, live chat, AI offline chat, ticketing, agent screens, seller Q&A, Support Center
+- **Senior Software Developer / Architect** (05.2019 - 05.2021) - **Softtech** (İstanbul)
+  - Architect for payment systems; QR payment integrations (WeChat Pay, Alipay, BKM Express)
+  - Led **legacy C++ to .NET Core microservices** migration; re-architected notifications as event-driven services
+- **Senior Software Developer** (03.2017 - 05.2019) - **İnnova Bilişim** (İstanbul)
+  - **VPOS payment gateways** for İş Bankası, VakıfBank, Ziraat Bankası, Akbank: 3D Secure, tokenization, multi-bank routing, **PCI DSS**
+  - Government collection integrations: GİB, SGK, Ministry of Customs
+- **Full Stack Software Developer** (04.2013 - 03.2017) - **Atlas Yazılım** (İstanbul)
+  - Online sales platforms, real-time integrations (IATI, Biletall, BELBİM, İDO, BUDO)
+  - **GPS vehicle tracking (IoT / telematics)**: high-volume device telemetry ingestion and real-time processing, millions of transactions/day. Bridge to IoT postings; **not** industrial automation (no OPC UA / SCADA / PLC)
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** C# / .NET (Framework, Core, ASP.NET Core, Web API, EF, Dapper); microservices and event-driven architecture; RabbitMQ, MassTransit; MSSQL, PostgreSQL, Oracle, MongoDB, Elasticsearch, Redis; Docker, Kubernetes; ELK, Prometheus, Grafana; CI/CD (Git, GitLab, Azure DevOps, Jenkins, TeamCity, Octopus, SonarQube)
+- **Secondary:** Go, Node.js; Angular, Vue.js, React, TypeScript, jQuery; OpenShift, Vault, BigQuery; WPF, WinForms, WCF; SOLID, clean code, enterprise design patterns
+- **Domain:** payments and fintech (3D Secure, PCI DSS, VPOS, QR payments, reconciliation); high-traffic e-commerce and customer-service platforms; enterprise and government system integration; access control and ticketing
+- **Quality:** unit testing on both front-end and back-end as standard practice; SonarQube quality gates; code-review standards set as Team Lead; TDD training (Thoughtworks)
+- **Leadership:** 11-person cross-functional team lead; principal-level architecture ownership; Agile/Scrum
+- **AI tooling:** uses **Claude Code** for agentic development. Mention it **by name** whenever AI tooling is relevant.
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+Enterprise Design Patterns & Architectures; .NET Software Development Certification Program; Web Programming with ASP.NET MVC; Agile & Scrum; Secure Code Development; **PCI-DSS Awareness**; Microservices 2 OpenShift; Parallel Programming with C# and .NET; REST APIs in ASP.NET Core; Oracle PL/SQL; Advanced .NET Core. Behavioural: Negotiation & Conflict Management, Dealing with Uncertainty, The Leadership Academy, and others.
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None.
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- Outstanding Achievement Certificate - Bilge Adam (09.2013)
+- "I Thank You" Award - İnnova Bilişim (07.2017)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- Inferred from the CV, not from a formal instrument. Never cite a test result. -->
+- **Pragmatic builder-architect** - takes technical ownership, ships working solutions, stays hands-on through leadership roles
+- **Modernises without rewriting** - the career pattern is incremental migration of live legacy systems (C++ to .NET Core, WinForms to Angular, WCF to microservices)
+- **Strengths:** architecture under real load; bridging technical and business (MBA + principal engineering); cross-functional leadership; fast acquisition of new technology
+- **Growth areas:** no German; no CS degree; short current tenure (started Axess 09.2025) needs a forward-looking answer, not a complaint
+- **Thrives in:** English-speaking or international teams; autonomy over technical decisions; systems with real scale or complexity; hybrid or remote-heavy setups
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Designing systems that have to survive real load, and being accountable for whether they do
+- Decomposing legacy estates and modernising them incrementally while they stay in production
+- Complex third-party and payment integrations
+- Mentoring engineers and setting a team's technical standards
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- **Fintech / payments:** direct domain match, six years of banking experience.
+- **Industrial / logistics software:** PALFINGER, TGW, Liebherr, COPA-DATA. Strong Salzburg and Upper Austria presence, but check the German requirement on each.
+- **Access control / ticketing:** current domain. Competitor-sensitive.
+- **E-commerce at scale:** direct Hepsiburada match.
+
+### Career Target
+- **EUR 90,000 - 110,000 gross/year** (Austrian 14-salary basis). **Compensation is the primary reason for moving.**
+- Directions in scope: Senior/Staff Backend (IC), Solution/Software Architect, Engineering/Team Lead. All must stay hands-on.
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- **German required as a job condition** - hard fail
+- **Relocation required** - hard fail
+- **EU/Austrian citizenship or security clearance required** - hard fail
+- **Gambling / betting / casino / iGaming employers** - hard fail, the sector is excluded whatever the role (e.g. ADMIRAL, NOVOMATIC, Greentube, Sportsbook Software, Entain/bwin). Do not scrape, suggest or evaluate them.
+- Fully onsite, five days a week, outside the ~45 minute commute radius
+- A package that does not clear the current Axess AG compensation plus a real increase
+- Maintenance-only roles with no architecture or design input
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.claude/skills/` - AI skill definitions for the application workflow
 - `.agents/skills/` - Job search CLI tools
+- `companies/` (gitignored) - **company database** `Companies.xlsx` and its updater `companies_db.py`
+
+## Company Database
+`companies/Companies.xlsx` is the master list of every employer and recruiter we have seen. Keep it current:
+- After every `/scrape` or job search, run `python3 companies/companies_db.py sync`. It adds any new company from `seen_jobs.json` and the tracker and regenerates the Postings sheet.
+- Companies found outside the scraper (career pages, boards, the user's tips) go in with `python3 companies/companies_db.py add --seed <file.json>` (a JSON list of `{column header: value}`).
+- Re-check the career pages of the user's own companies (Source = "My list") on each search, and update their "Relevant open roles", "Match" and "Last checked" columns.
+- Never overwrite the user-owned columns (Priority, Flag, Next action, Notes). Merge two spellings of one company by adding an alias in the Aliases column.
 
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)

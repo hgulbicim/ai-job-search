@@ -52,7 +52,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Hüseyin Gülbiçim - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -62,13 +62,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Hüseyin}{Gülbiçim}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Salzburg, Austria}{}{}
+\phone[mobile]{+43~664~384~68~55}
+\email{hsynglbcm@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/huseyin-gulbicim}{LinkedIn}, \href{https://github.com/hgulbicim}{GitHub}}
 
 \begin{document}
 \makecvtitle
@@ -130,11 +130,37 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+**For Senior / Staff Backend Engineer (.NET) roles:**
+> Full-stack software engineer with 13+ years of backend experience in the .NET ecosystem,
+> currently based in Salzburg. I design and operate microservice architectures that stay fast
+> under load: at Hepsiburada I owned customer-service platforms handling over 250 million
+> requests per day on .NET, RabbitMQ, PostgreSQL, and Kubernetes. Comfortable across C#,
+> ASP.NET Core, Entity Framework, and Dapper, with production experience in Go and Node.js,
+> and fluent in the delivery chain around them: Docker, Kubernetes, ELK, Prometheus, and
+> CI/CD on GitLab, Azure DevOps, and Octopus.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For Solution / Software Architect roles:**
+> Principal-level engineer and architect with 13+ years in the .NET ecosystem and a track
+> record of owning technical direction, not just implementation. At Softtech I acted as
+> architect for payment systems, driving the migration of legacy C++ applications to .NET Core
+> microservices and re-architecting notification infrastructure as event-driven services. At
+> Hepsiburada I set the architecture for platforms serving 250M+ requests per day. An MBA
+> alongside the engineering record means I can argue a technical decision in business terms.
+
+**For Engineering / Team Lead roles:**
+> Engineering leader who stayed hands-on. I led an 11-person cross-functional team at
+> Hepsiburada, 3 backend, 3 frontend, 2 QA, and 3 product, delivering customer-service
+> platforms at national e-commerce scale, then moved into a Principal role owning architecture
+> across the same portfolio. 13+ years in .NET, microservices, and distributed systems, plus an
+> MBA, which is why I am as comfortable in a roadmap conversation as in a code review.
+
+**For fintech / payments roles:**
+> Backend engineer and architect with six years of direct payments experience. At İnnova I
+> built the VPOS gateways used by İş Bankası, VakıfBank, Ziraat Bankası, and Akbank, covering
+> 3D Secure, tokenization, multi-bank routing, and PCI DSS compliance, plus tax, customs, and
+> social-security collection integrations. At Softtech I delivered QR payment integrations for
+> WeChat Pay, Alipay, and BKM Express and modernised legacy payment systems onto .NET Core
+> microservices.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

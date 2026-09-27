@@ -46,6 +46,41 @@ Judge the level comparison the same way you judge everything else in this framew
 
 **Worked example:** a candidate whose Languages table lists Spanish (Native) and English (B1/B2). A posting requiring "fluent Russian" → **FAIL**, Russian isn't declared at all. A posting requiring "fluent English" → **FLAG**, English is declared but "fluent" plausibly exceeds B1/B2 — score and draft the application, but tell the candidate this posting's bar may be a stretch and let them decide. A posting requiring "conversational English" or unspecified English → **PASS**, B1/B2 clears a "conversational" bar cleanly.
 
+## Austrian Market Notes — apply during every evaluation
+
+**German in Austrian postings.** Hüseyin speaks no German (see `01-candidate-profile.md`). Apply
+the Language Gate literally, and read the requirement for the *role*, not the ad:
+
+| Posting wording | Verdict |
+|---|---|
+| "Sehr gute Deutschkenntnisse", "Deutsch in Wort und Schrift", "Deutsch C1/B2", German-speaking customers or stakeholders | **FAIL — hard stop.** Quote the line back. |
+| "Deutsch von Vorteil", "German is a plus", "German is an advantage" | **PASS**, with a note that he has none. |
+| "English is our working language", "our team communicates in English" | **PASS**, and treat it as a positive ranking signal. |
+| Ad written in German, silent on the required language | **Do not auto-fail.** Check the company's English careers page or an English version of the posting, then decide. If it stays ambiguous, **FLAG** and let him judge. |
+
+**Competitor / non-compete flag.** He currently works at **Axess AG** (Anif, Salzburg), which
+competes directly with **SKIDATA** (Grödig / Wals) in access control and ski-resort ticketing.
+Any application to SKIDATA or another direct Axess competitor must carry an explicit warning to
+check his employment contract for a non-compete or non-solicitation clause (Konkurrenzklausel)
+before submitting. Never drop the role silently and never submit without raising it.
+
+**Salary bands (Austria, 14 salaries, gross per year).** Austrian postings are legally required
+to state a minimum (the collective-agreement "KV-Mindestgehalt"), which is usually well below the
+real offer. Read the stated minimum as a floor signal, not an offer:
+- Salzburg senior .NET IC: roughly EUR 70-90k
+- Principal / Architect / Lead: roughly EUR 90-120k
+- Vienna and remote-first fintech: typically 10-20% above Salzburg for the same level
+  (gambling/iGaming pays similarly but is an excluded sector: hard fail, do not evaluate)
+
+His target is **EUR 90-110k**, and compensation is the primary reason he would move. Score
+Career Alignment down for any role whose realistic band sits below the current package, and
+surface the stated minimum in every evaluation.
+
+**Short-tenure context.** He started at Axess AG in 09.2025. A move now means roughly a one-year
+stint on the CV. This is not a blocker, but it raises the bar: a lateral move is not worth it,
+and every application needs a forward-looking reason that is not a complaint about the current
+employer.
+
 ## Scoring Dimensions
 
 Evaluate each job posting against these five dimensions:
@@ -60,9 +95,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** C# / .NET (Framework, Core, ASP.NET Core, Web API, EF, Dapper); microservices and event-driven architecture; RabbitMQ / MassTransit; MSSQL, PostgreSQL, MongoDB, Elasticsearch, Redis; Docker and Kubernetes as deployment targets; ELK / Prometheus / Grafana; CI/CD (GitLab, Azure DevOps, Jenkins, TeamCity, Octopus); high-traffic distributed system design; payment and banking integrations (3D Secure, PCI DSS, VPOS).
+**Moderate match areas:** Go (GoLang), Node.js; Angular, Vue.js, React, TypeScript; OpenShift, Vault, BigQuery; WPF / WinForms / WCF legacy work; SonarQube and code-quality tooling; agentic development with Claude Code.
+**Weak match areas:** Java, Python, PHP, Rust as a primary language; native mobile (iOS/Android); data engineering, ML, and data science; cloud-provider certifications and deep AWS/Azure/GCP platform work (no certification, no architect-level cloud-native greenfield on a single hyperscaler); embedded / real-time C++ (the C++ work was migrating *away* from it); Kubernetes as a platform to operate rather than deploy onto; SAP, Salesforce, Dynamics and similar ERP/CRM ecosystems.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +109,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** senior and principal backend engineering in the .NET ecosystem; software / solution architecture; team lead of a cross-functional group; payments, fintech, and banking systems; high-traffic e-commerce and customer-service platforms; legacy modernisation programmes; enterprise system integration.
+**Moderate:** full-stack roles with a meaningful front-end share; access control and ticketing (current, one year at Axess AG); DevOps-leaning backend roles; logistics and industrial software (transferable, no direct domain history).
+**Entry-level / no history:** engineering manager with no hands-on component; pure cloud architect on a single hyperscaler; data / ML engineering; product management; pre-sales and solution consulting; anything requiring German-language client contact.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +142,25 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Move into the EUR 90-110k gross band (Austrian 14-salary basis). Compensation is the stated
+  primary driver for leaving the current role.
+- Consolidate the Principal / Solution Architect identity: own architecture and technical
+  direction rather than execute a given design.
+- Keep the Engineering / Team Lead path open. An 11-person cross-functional lead record is
+  already there and is worth compounding, provided the role stays hands-on.
+- Stay technically deep. A role that removes him from code entirely is a step away from his
+  strengths, not toward them.
+- Build a long-term base in Salzburg without relocation.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: designing systems that have to survive real load; decomposing monoliths and modernising legacy estates; making technology and architecture decisions with real consequences; integrating complex third-party and payment systems; mentoring engineers and shaping team technical standards; picking up an unfamiliar technology to solve a concrete problem.
+- Tasks that drain: maintenance-only queues with no design input; implementing fixed specifications handed down without engineering consultation; low-traffic CRUD applications; heavy ceremony and status reporting; environments where every decision needs escalation; front-end-dominant roles (capable, but it is not the draw).
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: currently employed and not under time pressure. This is a strong negotiating position. He can decline a lateral offer, and should: a move that does not clear the current package plus a real increase is not worth the short-tenure cost of leaving Axess AG after roughly a year.
+- **Flexibility**: based in Salzburg, no relocation. Roughly 45 minutes of commute tolerance for onsite or hybrid roles. Austria-wide employers are in scope only at 80-100% remote. Upper Austria (Wels, Marchtrenk, Linz) needs a strong remote component. Germany and the Bavarian border area are out of scope this round.
+- **Professional development**: architecture scope and decision authority; exposure to genuinely large-scale or technically demanding systems; AI-assisted and agentic development practice (Claude Code); an English working language, which is also a hard practical requirement rather than only a preference.
 
 ### 6. Salary Benchmark (Optional)
 
